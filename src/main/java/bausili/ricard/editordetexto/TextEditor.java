@@ -74,8 +74,7 @@ public class TextEditor extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         if(ae.getSource()==fontColorButton){
-            JColorChooser colorChooser = new JColorChooser();
-            Color color = colorChooser.showDialog(null, "Chooser a color", Color.black);
+            Color color = JColorChooser.showDialog(null, "Chooser a color", Color.black);
             textArea.setForeground(color);
         }
     }
